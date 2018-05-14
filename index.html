@@ -5,14 +5,14 @@
   <script type="text/javascript" src="qrcode.js"></script>
 </head>
 <body>
-  <input id="text" type="text" value="DCNC" style="width:80%" /><br />
-  <div id="qrcode">
+  <div id="qrcode"></div>
+  <br />
+  <input id="text" type="text" value="Type in your message" style="width:50%" /><br />
 
-  </div>
   <script>
   var qrcode = new QRCode(document.getElementById("qrcode"), {
-    width : 100,
-    height : 100,
+    width : 200,
+    height : 200,
     colorDark: '#000000',
     colorLight: '#ffffff',
   });
